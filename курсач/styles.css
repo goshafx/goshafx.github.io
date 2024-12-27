@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2c2c54, #1a1a2e); /* Темный градиент по умолчанию */
+    color: #ffffff; /* Белый цвет текста для темного режима */
+}
+
+body.light-mode {
+    background: #ffffff; /* Белый фон для светлого режима */
+    color: #000000; /* Черный цвет текста для светлого режима */
+}
+
+header {
+    background: #5e4b8c;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 15px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #5e4b8c;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для секций */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Более темная тень */
+}
+
+body.light-mode section {
+    background: rgba(0, 0, 0, 0.05); /* Полупрозрачный фон для секций в светлом режиме */
+}
+
+h2, h3 {
+    color: #5e4b8c;
+}
+
+.chat-box {
+    margin-top: 20px;
+    border-top: 2px solid #5e4b8c;
+    padding-top: 10px;
+}
+
+.messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон для чата */
+}
+
+body.light-mode .messages {
+    background: rgba(0, 0, 0, 0.05); /* Полупрозрачный фон для чата в светлом режиме */
+}
+
+.chat-input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    padding: 10px;
+    background: #5e4b8c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background: #7a5c9a;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #5e4b8c;
+    color: #ffffff;
+}

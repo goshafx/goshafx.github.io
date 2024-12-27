@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация - Форум ООО комп-сити</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Форум ООО комп-сити</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Темы</a></li>
+                <li><a href="login.html">Авторизация</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="topics">
+            <h2>Темы форума</h2>
+            <div class="topic">
+                <h3><a href="shooters.html">Игры</a></h3>
+                <ul>
+                    <li><a href="shooters.html">Шутеры</a></li>
+                    <li><a href="rpg.html">Ролевые игры</a></li>
+                    <li><a href="adventure.html">Приключенческие игры</a></li>
+                </ul>
+            </div>
+            <div class="topic">
+                <h3><a href="computers.html">Технологии</a></h3>
+                <ul>
+                    <li><a href="computers.html">Компьютеры</a></li>
+                    <li><a href="consoles.html">Консоли</a></li>
+                    <li><a href="gadgets.html">Гаджеты</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="login">
+            <h2>Авторизация</h2>
+            <form>
+                <label for="login-username">Имя пользователя:</label>
+                <input type="text" id="login-username" name="login-username" required>
+                
+                <label for="login-password">Пароль:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                
+                <button type="submit">Войти</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ООО комп-сити. Все права защищены.</p>
+    </footer>
+</body>
+</html>
